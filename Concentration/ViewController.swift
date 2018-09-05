@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var game = Concentration()
+    
     var filpCount = 0 {
         //fileCount가 변할 때 마다 라벨을 업데이트시킨다.
         didSet {
@@ -32,7 +34,7 @@ class ViewController: UIViewController {
 
     }
 
-    
+     
     
     func flipCard(withEmoji emoji: String, on button: UIButton) {
         print("flipCard(withEmoji: \(emoji)")
