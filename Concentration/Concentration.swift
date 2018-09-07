@@ -12,7 +12,27 @@ class Concentration
 {
     var cards = [Card]()
     
-    var indexOfOnAndOnlyFaceUpCard: Int?
+    var indexOfOnAndOnlyFaceUpCard: Int? {
+        get {
+            var foundIndex: Int?
+            for index in cards.indices {
+                if cards[index].isFaceUp {
+                    if foundIndex == nil {
+                        foundIndex = index
+                    }else {
+                        return nil
+                    }
+                }
+            }
+            return foundIndex
+        }
+        //(newvalue)가 없으면 디폴트가 newValue
+        set {
+            for index in cards.indices {
+                cards[index].isFaceUp = (index == newValue)
+            }
+        }
+    }
     
     func chooseCard(at index: Int) {
         if !cards[index].isMatched {
