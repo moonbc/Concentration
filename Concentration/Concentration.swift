@@ -39,7 +39,7 @@ struct Concentration
         if !cards[index].isMatched {
             if let matchIndex = indexOfOnAndOnlyFaceUpCard, matchIndex != index {
                 //check if cards match
-                if cards[matchIndex].identifier == cards[index].identifier {
+                if cards[matchIndex] == cards[index] {
                     cards[matchIndex].isMatched = true
                     cards[index].isMatched = true
                 }
@@ -47,12 +47,8 @@ struct Concentration
                 cards[index].isFaceUp = true
 //                indexOfOnAndOnlyFaceUpCard = nil
             }else {
-                //either no cards or 2 cards are face up
-                for flipDownIndex in cards.indices {
-                    cards[flipDownIndex].isFaceUp = false
-                }
-                cards[index].isFaceUp = true
-//                indexOfOnAndOnlyFaceUpCard = index
+
+                indexOfOnAndOnlyFaceUpCard = index
             }
         }
     }
