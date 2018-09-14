@@ -20,7 +20,13 @@ class ViewController: UIViewController {
     private(set) var filpCount = 0 {
         //fileCount가 변할 때 마다 라벨을 업데이트시킨다.
         didSet {
-            flipCountLabel.text = "Flips: \(filpCount)"
+            let attributes: [NSAttributedStringKey:Any] = [
+                .strokeWidth : 5.0,
+                .strokeColor : #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)
+            ]
+            let attributedString = NSAttributedString(string: "Flips: \(filpCount)", attributes: attributes)
+            
+            flipCountLabel.attributedText = attributedString
         }
     }
     
