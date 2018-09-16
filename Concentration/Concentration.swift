@@ -14,22 +14,9 @@ struct Concentration
     
     private var indexOfOnAndOnlyFaceUpCard: Int? {
         get {
+
+            return cards.indices.filter { cards[$0].isFaceUp }.oneAndOnly
             
-            let faceUpCardIndices = cards.indices.filter { cards[$0].isFaceUp }
-            
-            return faceUpCardIndices.count == 1 ? faceUpCardIndices.first : nil
-            
-//            var foundIndex: Int?
-//            for index in cards.indices {
-//                if cards[index].isFaceUp {
-//                    if foundIndex == nil {
-//                        foundIndex = index
-//                    }else {
-//                        return nil
-//                    }
-//                }
-//            }
-//            return foundIndex
         }
         //(newvalue)가 없으면 디폴트가 newValue
         set {
@@ -70,4 +57,9 @@ struct Concentration
     }
 }
 
+extension Collection {
+    var oneAndOnly: Element? {
+        return count == 1 ? first : nil
+    }
+}
 
