@@ -15,10 +15,10 @@ struct PlayingCard
     
     enum Suit: String {
         
-        case spades = "♠︎"
-        case hearts = "❤️"
-        case diamonds = "♦︎"
-        case clubs = "♣︎"
+        case spades = "♠️"
+        case hearts = "♥️"
+        case diamonds = "♦️"
+        case clubs = "♣️"
     }
     enum Rank {
         
