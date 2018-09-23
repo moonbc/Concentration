@@ -16,7 +16,7 @@ struct PlayingCard
     enum Suit: String {
         
         case spades = "♠️"
-        case hearts = "❤️"
+        case hearts = "♥️❤️"
         case diamonds = "♦️"
         case clubs = "♣️"
     }
