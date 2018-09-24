@@ -21,7 +21,13 @@ struct PlayingCard
         case clubs = "♣️"
     }
     enum Rank {
+        case ace
+        case two
+        case three
         
+        case jack
+        case queen
+        case king
     }
 
 }
