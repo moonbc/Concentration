@@ -19,16 +19,36 @@ struct PlayingCard
         case hearts = "♥️❤️"
         case diamonds = "♦️"
         case clubs = "♣️"
+        
+        static var all = [Suit.spades, .hearts ,.diamonds , .clubs ]
     }
     enum Rank {
         case ace
-        case two
-        case three
+        case face(String)
+        case numeric(Int)
         
-        case jack
-        case queen
-        case king
+        var order: Int {
+            switch self {
+            case .numeric(let pips): return pips
+            case .face(let kind) where kind == "J" : return 11
+            case .face(let kind) where kind == "Q" : return 12
+            case .face(let kind) where kind == "K" : return 13
+            default: return 0
+            }
+        }
+        
+        static var all: [Rank] {
+            var allRanks = [Rank.ace]
+            for pips in 2...10 {
+                allRanks.append(Rank.numeric(pips))
+            }
+            
+            allRanks += [ Rank.face("J"),Rank.face("Q"), Rank.face("K") ]
+            
+            return allRanks
+        }
     }
+    
 
 }
 
