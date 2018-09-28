@@ -14,7 +14,6 @@
 		673B8744213ECA2500306CD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 673B8742213ECA2500306CD9 /* LaunchScreen.storyboard */; };
 		673B874E2140340800306CD9 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B874D2140340800306CD9 /* Concentration.swift */; };
 		673B8750214034C900306CD9 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B874F214034C900306CD9 /* Card.swift */; };
-		67BCA82B215147A9003CD6C0 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCA82A215147A9003CD6C0 /* PlayingCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		673B8745213ECA2500306CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		673B874D2140340800306CD9 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
 		673B874F214034C900306CD9 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		67BCA82A215147A9003CD6C0 /* PlayingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +61,6 @@
 				673B874C213ECC3F00306CD9 /* Supporting Files */,
 				673B873B213ECA2100306CD9 /* ViewController.swift */,
 				673B873D213ECA2100306CD9 /* Main.storyboard */,
-				67BCA82A215147A9003CD6C0 /* PlayingCard.swift */,
 				673B874D2140340800306CD9 /* Concentration.swift */,
 				673B874F214034C900306CD9 /* Card.swift */,
 				673B8745213ECA2500306CD9 /* Info.plist */,
@@ -152,7 +149,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67BCA82B215147A9003CD6C0 /* PlayingCard.swift in Sources */,
 				673B873C213ECA2100306CD9 /* ViewController.swift in Sources */,
 				673B873A213ECA2100306CD9 /* AppDelegate.swift in Sources */,
 				673B874E2140340800306CD9 /* Concentration.swift in Sources */,
