@@ -37,7 +37,7 @@ struct Concentration
                 }
                 
                 cards[index].isFaceUp = true
-//                indexOfOnAndOnlyFaceUpCard = nil
+
             }else {
 
                 indexOfOnAndOnlyFaceUpCard = index
