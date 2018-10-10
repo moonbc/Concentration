@@ -5,7 +5,7 @@
 //  Created by moonbc on 2018. 9. 4..
 //  Copyright © 2018년 moonbc.com. All rights reserved.
 //
-// gitignore 파일 수정하기 힘들다.
+
 import UIKit
 
 class ViewController: UIViewController {
